@@ -1,0 +1,14 @@
+<ion-view class="bg-1 clientinfo" ng-class="ThemeCssClass">
+    <ion-content padding="true">
+        <div class="center-content" ng-cloak>
+            <div ng-if="clientLoaded" ng-show="ImageLoaded">
+                <div class="circle" ng-if="hasLogo">
+                    <img ng-cache ng-src="{{client.Logo}}" imageonload="ImageLoadCompelete" />
+                </div>
+                <h1>{{client.Name}}</h1>
+              
+            </div>
+        </div>
+    </ion-content>
+    <p class="p-pull-down">Powered by <br /> <span><img src="images/logo3al.png"/></span></p>
+</ion-view>

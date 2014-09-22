@@ -1,0 +1,10 @@
+<ion-view title="{{menu.Name}}" >
+  <ion-content class="has-header">
+    <ion-list>
+        <a ui-sref="{{menu.sref}}" class="item sub-menu" ng-repeat="menu in menu.Children">
+            <span class="submenu-list-icon"><img ng-src="{{menu.menuIcon}}" /></span>
+            <span class="list-name">{{menu.Name}}</span>
+        </a>
+    </ion-list>
+  </ion-content>
+</ion-view>
